@@ -22,7 +22,13 @@ public class Quickmaths {
         start();
 
     }
-    /**gennemsnit(int a, int b) bruges til at udregne gennemsnittet af de to tal**/
+
+    /**
+     * gennemsnit(int a, int b) bruges til at udregne gennemsnittet af de to tal
+     * @param a
+     * @param b
+     * @return
+     */
     public static int gennemsnit(int a, int b){
                 int c = a+b;
                 c=c/2;
