@@ -1,5 +1,5 @@
 
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * Developed by András Ács (acsandras@gmail.com)
@@ -33,7 +33,11 @@ public class Loops {
      */
     public void printBrugereArr() {
 
-        // TODO Din kode her
+       // TODO Din kode her
+
+        for (int i = 0; i < brugere.length; i++){
+            System.out.println(brugere[i]);
+        }
     }
 
     /**
@@ -42,6 +46,13 @@ public class Loops {
     public void printBrugereReverseArr() {
 
         // TODO Din kode her
+
+        List<String> brugere2 = Arrays.asList(brugere);
+        Collections.reverse(brugere2);
+        String[] brugereRev = brugere2.toArray(brugere);
+        for (int i = 0; i < brugereRev.length; i++){
+            System.out.println(brugere[i]);
+        }
 
     }
 
