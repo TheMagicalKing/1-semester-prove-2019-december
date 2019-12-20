@@ -1,3 +1,6 @@
+
+import java.util.Scanner;
+
 /**
  * Developed by András Ács (acsandras@gmail.com)
  * Zealand / www.zealand.dk
@@ -12,6 +15,9 @@ public class Loops {
     public String[] getBrugere() {
         return brugere;
     }
+
+
+
 
     public static void main(String[] args) {
         Loops l = new Loops();
@@ -42,6 +48,11 @@ public class Loops {
     public void waitingFor0() {
 
         // TODO Din kode her
- 
+        Scanner input = new Scanner(System.in);
+        System.out.println("I'm waiting for 0! Please give me a number!");
+        while (input.nextInt() != 0){
+            System.out.println("Waiting for 0! New number please!... ");
+            }
+        System.out.println("You've entered 0! Thank you for playing! :D");
     }
 }
