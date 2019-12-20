@@ -15,5 +15,8 @@ public class Main {
             return "Hello " + navn + "!";
         }
     }
+    // Tested the method in MainTest file
+
+
 
 }
