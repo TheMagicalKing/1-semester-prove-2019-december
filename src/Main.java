@@ -8,9 +8,12 @@
 public class Main {
 
     // TODO Din kode her
-
     public String hello(String navn) {
-        return "";
+        if (navn.equalsIgnoreCase(""))
+            return "Hello World!";
+        else {
+            return "Hello " + navn + "!";
+        }
     }
 
 }
