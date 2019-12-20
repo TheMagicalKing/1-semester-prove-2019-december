@@ -30,6 +30,12 @@ public abstract class Quiz implements Translatable {
             System.out.println("Wrong answer thanks for playing!");
         }
 
+        System.out.println(question.getPoint());
+
+        question.setRightAnswers(2);
+        System.out.println(question.getRightAnswers());
+
+
     }
 
 
