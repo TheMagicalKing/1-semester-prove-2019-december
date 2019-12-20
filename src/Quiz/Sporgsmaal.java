@@ -5,7 +5,15 @@ public class Sporgsmaal {
     private int point;
     private String answer[];
     private int rightAnswers;
+    private int correctAnswer;
 
+    public int getCorrectAnswer() {
+        return correctAnswer;
+    }
+
+    public void setCorrectAnswer(int correctAnswer) {
+        this.correctAnswer = correctAnswer;
+    }
 
     public String getQuestionText() {
         return questionText;
@@ -23,6 +31,14 @@ public class Sporgsmaal {
         this.point = point;
     }
 
+    public String[] getAnswer() {
+        return answer;
+    }
+
+    public void setAnswer(String[] answer) {
+        this.answer = answer;
+    }
+
     public int getRightAnswers() {
         return rightAnswers;
     }
@@ -30,18 +46,4 @@ public class Sporgsmaal {
     public void setRightAnswers(int rightAnswers) {
         this.rightAnswers = rightAnswers;
     }
-
-    public void getAnswer() {
-
-        for (int i = 0; i < answer.length; i++){
-            System.out.println(answer[i]);
-        }
-    }
-
-    public void setAnswer(String[] answer) {
-        this.answer = answer;
-    }
-
-
-
 }
